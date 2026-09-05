@@ -1,0 +1,35 @@
+services:
+  detector:
+    build: .
+    command: ["python", "detector.py"]
+    environment:
+      NETWORK_SCAN_PORT_THRESHOLD: "4"
+      FAILED_LOGIN_THRESHOLD: "3"
+      SCAN_INTERVAL: "5"
+    volumes:
+      - ./logs:/app/logs
+      - ./output:/app/output
+      - ./mitre:/app/mitre:ro
+    restart: unless-stopped
+
+  dashboard:
+    build: .
+    command: ["python", "dashboard.py"]
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./logs:/app/logs:ro
+      - ./output:/app/output:ro
+    depends_on:
+      - detector
+    restart: unless-stopped
+
+  simulator:
+    build: .
+    command: ["python", "simulator.py"]
+    profiles: ["simulation"]
+    environment:
+      SIMULATION_INTERVAL: "4"
+    volumes:
+      - ./logs:/app/logs
+    restart: "no"

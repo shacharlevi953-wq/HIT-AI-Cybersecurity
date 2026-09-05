@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-09-05T19:20:17.066154+00:00",
+  "configuration": {
+    "failed_login_threshold": 3,
+    "network_scan_port_threshold": 4
+  },
+  "total_findings": 2,
+  "findings": [
+    {
+      "detected_at": "2026-09-05T19:20:17.140060+00:00",
+      "technique_id": "T1046",
+      "technique_name": "Network Service Discovery",
+      "tactic": "Discovery",
+      "mitre_url": "https://attack.mitre.org/techniques/T1046/",
+      "stix_lookup_status": "matched",
+      "stix_id": "attack-pattern--network-service-discovery-lab1a",
+      "severity": "medium",
+      "source_ip": "172.18.0.20",
+      "evidence": "2026-09-05T12:00:25+00:00 Network scan detected from 172.18.0.20 against ports 22,80,443,3306",
+      "network_scan_port_threshold": 4,
+      "scanned_ports": [
+        22,
+        80,
+        443,
+        3306
+      ],
+      "scanned_port_count": 4
+    },
+    {
+      "detected_at": "2026-09-05T19:20:17.140662+00:00",
+      "technique_id": "T1110",
+      "technique_name": "Brute Force",
+      "tactic": "Credential Access",
+      "mitre_url": "https://attack.mitre.org/techniques/T1110/",
+      "stix_lookup_status": "matched",
+      "stix_id": "attack-pattern--brute-force-lab1a",
+      "severity": "high",
+      "source_ip": "172.18.0.15",
+      "evidence": "2026-09-05T12:00:05+00:00 Failed password for user admin from 172.18.0.15 | 2026-09-05T12:00:10+00:00 Failed password for user root from 172.18.0.15 | 2026-09-05T12:00:15+00:00 Failed password for user service from 172.18.0.15",
+      "network_scan_port_threshold": 4,
+      "failed_login_count": 3,
+      "failed_login_threshold": 3
+    }
+  ]
+}

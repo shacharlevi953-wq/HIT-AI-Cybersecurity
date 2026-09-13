@@ -1,0 +1,21 @@
+Lab 1a Analysis — Shachar Levi
+
+Parameter added
+NETWORK_SCAN_PORT_THRESHOLD was added as a configurable environment variable. It is set in docker-compose.yml and read by detector.py.
+
+Configured value
+NETWORK_SCAN_PORT_THRESHOLD=4
+
+Event that did not trigger a finding
+Network scan detected from 172.18.0.20 against ports 22,80
+This event contains only two distinct ports, which is below the configured threshold of four. Therefore, no T1046 finding was created.
+
+Event that triggered a finding
+Network scan detected from 172.18.0.20 against ports 22,80,443,3306
+This event contains four distinct ports, so the detector created a T1046 — Network Service Discovery finding with the Discovery tactic.
+
+Effect on false positives and false negatives
+A lower threshold makes the detector more sensitive. It can identify small reconnaissance attempts, but ordinary administrative checks may create more false positives. A higher threshold reduces alerts caused by low-volume benign activity, but it can miss slow or carefully distributed scans and therefore increase false negatives. The value four is a simple laboratory compromise and should be tuned using real environmental baselines.
+
+Additional validation
+Three failed-password events from the same source IP created a T1110 — Brute Force finding. An empty log produced zero findings while the dashboard remained available.

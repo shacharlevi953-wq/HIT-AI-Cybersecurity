@@ -1,0 +1,21 @@
+record_id,SSLfinal_State,URL_of_Anchor,Prefix_Suffix,web_traffic,Links_in_tags,actual_is_phishing,predicted_is_phishing,phishing_probability,mitre_tactic,mitre_technique,recommended_action
+5798,0,-1,-1,-1,-1,1,1,1.0,Initial Access,T1566.002 - Spearphishing Link,Block and investigate
+625,-1,-1,-1,0,-1,1,1,1.0,Initial Access,T1566.002 - Spearphishing Link,Block and investigate
+3541,-1,-1,-1,-1,-1,1,1,1.0,Initial Access,T1566.002 - Spearphishing Link,Block and investigate
+5061,-1,-1,-1,-1,-1,1,1,1.0,Initial Access,T1566.002 - Spearphishing Link,Block and investigate
+1038,-1,-1,-1,-1,-1,1,1,1.0,Initial Access,T1566.002 - Spearphishing Link,Block and investigate
+4070,0,-1,-1,0,0,1,1,1.0,Initial Access,T1566.002 - Spearphishing Link,Block and investigate
+6935,-1,-1,-1,-1,-1,1,1,1.0,Initial Access,T1566.002 - Spearphishing Link,Block and investigate
+2763,-1,-1,-1,0,-1,1,1,1.0,Initial Access,T1566.002 - Spearphishing Link,Block and investigate
+4612,-1,-1,-1,-1,0,1,1,1.0,Initial Access,T1566.002 - Spearphishing Link,Block and investigate
+2375,0,-1,-1,0,0,1,1,1.0,Initial Access,T1566.002 - Spearphishing Link,Block and investigate
+555,0,-1,-1,-1,0,1,1,1.0,Initial Access,T1566.002 - Spearphishing Link,Block and investigate
+689,0,-1,-1,-1,1,1,1,1.0,Initial Access,T1566.002 - Spearphishing Link,Block and investigate
+5084,0,-1,-1,-1,-1,1,1,1.0,Initial Access,T1566.002 - Spearphishing Link,Block and investigate
+1055,0,-1,-1,-1,0,1,1,1.0,Initial Access,T1566.002 - Spearphishing Link,Block and investigate
+806,-1,-1,-1,-1,1,1,1,1.0,Initial Access,T1566.002 - Spearphishing Link,Block and investigate
+1709,-1,-1,-1,-1,-1,1,1,1.0,Initial Access,T1566.002 - Spearphishing Link,Block and investigate
+5505,0,-1,-1,-1,-1,1,1,1.0,Initial Access,T1566.002 - Spearphishing Link,Block and investigate
+1313,0,-1,-1,-1,1,1,1,1.0,Initial Access,T1566.002 - Spearphishing Link,Block and investigate
+802,-1,-1,-1,0,-1,1,1,1.0,Initial Access,T1566.002 - Spearphishing Link,Block and investigate
+1923,-1,-1,-1,0,0,1,1,1.0,Initial Access,T1566.002 - Spearphishing Link,Block and investigate

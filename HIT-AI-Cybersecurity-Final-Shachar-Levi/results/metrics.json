@@ -1,0 +1,102 @@
+{
+  "dataset": "UCI Phishing Websites (id=327)",
+  "instances": 11055,
+  "features": 30,
+  "train_instances": 8844,
+  "test_instances": 2211,
+  "accuracy": 0.9706015377657169,
+  "precision_phishing": 0.9663608562691132,
+  "recall_phishing": 0.9673469387755103,
+  "f1_phishing": 0.9668536460989291,
+  "roc_auc": 0.996351066828031,
+  "confusion_matrix": [
+    [
+      1198,
+      33
+    ],
+    [
+      32,
+      948
+    ]
+  ],
+  "classification_report": {
+    "legitimate": {
+      "precision": 0.9739837398373984,
+      "recall": 0.9731925264012997,
+      "f1-score": 0.9735879723689557,
+      "support": 1231.0
+    },
+    "phishing": {
+      "precision": 0.9663608562691132,
+      "recall": 0.9673469387755103,
+      "f1-score": 0.9668536460989291,
+      "support": 980.0
+    },
+    "accuracy": 0.9706015377657169,
+    "macro avg": {
+      "precision": 0.9701722980532558,
+      "recall": 0.970269732588405,
+      "f1-score": 0.9702208092339424,
+      "support": 2211.0
+    },
+    "weighted avg": {
+      "precision": 0.9706049854742507,
+      "recall": 0.9706015377657169,
+      "f1-score": 0.9706030606798439,
+      "support": 2211.0
+    }
+  },
+  "top_10_features": [
+    {
+      "feature": "SSLfinal_State",
+      "importance_mean": 0.12297759200038923,
+      "importance_std": 0.007465162549302066
+    },
+    {
+      "feature": "URL_of_Anchor",
+      "importance_mean": 0.11580298385378192,
+      "importance_std": 0.005788054713577546
+    },
+    {
+      "feature": "Prefix_Suffix",
+      "importance_mean": 0.032554683965391615,
+      "importance_std": 0.0034108002049823903
+    },
+    {
+      "feature": "web_traffic",
+      "importance_mean": 0.026153091701940884,
+      "importance_std": 0.002151806634790513
+    },
+    {
+      "feature": "Links_in_tags",
+      "importance_mean": 0.024246339405389283,
+      "importance_std": 0.0024459637644225823
+    },
+    {
+      "feature": "having_Sub_Domain",
+      "importance_mean": 0.019539410867700266,
+      "importance_std": 0.001988060565213478
+    },
+    {
+      "feature": "Links_pointing_to_page",
+      "importance_mean": 0.011294305906126373,
+      "importance_std": 0.001425874233928451
+    },
+    {
+      "feature": "SFH",
+      "importance_mean": 0.010753336060075225,
+      "importance_std": 0.0018909869004148706
+    },
+    {
+      "feature": "DNSRecord",
+      "importance_mean": 0.009388319520251626,
+      "importance_std": 0.0010633613773121738
+    },
+    {
+      "feature": "Request_URL",
+      "importance_mean": 0.008913378814605064,
+      "importance_std": 0.0017478794105190043
+    }
+  ],
+  "random_state": 42
+}
